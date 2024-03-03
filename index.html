@@ -4,8 +4,293 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    
+    <nav id="desktop-nav">
+        <div class="logo">Abílio Gama</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>   
+        </div>
+    </nav>    
+    <nav id="hamburger-nav">
+        <div class="logo">Abílio Gama</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>  
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/PerfilRedonda.png" alt="Foto de perfil do Abílio Gama">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Olá, eu sou o</p>
+            <h1 class="title">Abílio Gama</h1>
+            <p class="section__text__p2">Desenvolvedor Front-end</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/Curriculo-Abilio-Gama.pdf')">Dowload CV
+                </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                Contato
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                alt="Meu perfil do Linkedin"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/abílio-gama-neto-junior/'"
+                >
+                <img src="./assets/github.png" 
+                alt="Meu perfil do Github"
+                class="icon" 
+                onclick="location.href='https://github.com/AbilioGamaNJ'"
+                >
+            </div>
+        </div>
+    </section> 
+    <section id="about">
+        <p class="section__text__p1">Saiba mais</p>
+        <h1 class="title">Sobre mim</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/PerfilQuadrada.png" 
+                alt="Foto de Perfil"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="Ícone de experiência" 
+                        class="icon"
+                        />
+                        <h3>Experiência</h3>
+                        <p>2+ meses <br>Desenvolvedor Front-End</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Ícone de experiência" 
+                        class="icon"
+                        />
+                        <h3>Formação</h3>
+                        <p>Técnico em Desenvolvimento de Sistemas <br> Tecnólogo em Análise e Desenvolvimento de Sistemas<b>(cursando)</b></p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloremque possimus veniam voluptatem ipsa consequatur pariatur perspiciatis iste dicta impedit fugit omnis maiores aliquid provident accusantium est a illum quibusdam.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="ícone de Flecha" 
+        class="icon-arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section> 
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experiência</h1>
+        <div class="experience-details-container">
+            <div class="about-containers-experience">
+                <div class="details-container-experience">
+                    <h2 class="experience-sub-title">Tecnologias</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon"
+                            />
+                            <div>
+                                <h3>HTML5</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon"
+                            />
+                            <div>
+                                <h3>CSS3</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon"
+                            />
+                            <div>
+                                <h3>NODEJS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon"
+                            />
+                            <div>
+                                <h3>JAVASCRIPT</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon"
+                            />
+                            <div>
+                                <h3>BOOTSTRAP</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon"
+                            />
+                            <div>
+                                <h3>FIGMA</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon"
+                            />
+                            <div>
+                                <h3>REACT</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon"
+                            />
+                            <div>
+                                <h3>Git/Github</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Ícone de flecha"
+        class="icon-arrow"
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1"> Meus recentes</p>
+        <h1 class="title">Projetos</h1>
+        <div class="project-details-container">
+            <div class="about-containers">
+                <div class="article-container">
+                    <div class="details-container color-container">
+                        <h2 class="experience-sub-title">Projeto APA</h2>
+                        <div class="article-container">
+                            <img src="./assets/APA-Home-Picture.jpg" 
+                            alt="Foto do primeiro projeto"
+                            class="project-img"
+                            />
+                        </div>
+                        <div>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" 
+                                onclick="location.href='https://github.com/AbilioGamaNJ/SaAPA'">
+                                    Github
+                                </button>
+                                <button class="btn btn-color-2 project-btn" 
+                                onclick="location.href='https://apatb.netlify.app/'">
+                                    Acessar Site
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title">Projeto APA 2</h2>
+                <div class="article-container">
+                    <img src="./assets/APA-Home-Picture.jpg" 
+                    alt="Foto do primeiro projeto"
+                    class="project-img"
+                    />
+                </div>
+                <div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/AbilioGamaNJ/SaAPA'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://apatb.netlify.app/'">
+                            Acessar Site
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title">Projeto APA 3</h2>
+                <div class="article-container">
+                    <img src="./assets/APA-Home-Picture.jpg" 
+                    alt="Foto do primeiro projeto"
+                    class="project-img"
+                    />
+                </div>
+                <div>
+                   
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/AbilioGamaNJ/SaAPA'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://apatb.netlify.app/'">
+                            Acessar Site
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="ícone de Flecha" 
+        class="icon-arrow"
+        onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Entre em contato</p>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" 
+                alt="Ícone do email"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:abiliogamanetojunior@gmail.com">abiliogamanetojunior@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" 
+                alt="Ícone do linkedin"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/abílio-gama-neto-junior/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>   
+            </div>
+        </nav>
+        <!-- <p>Copyright &#169; 2024 Abílio Gama Direitos Reservados</p> -->
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
