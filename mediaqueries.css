@@ -17,9 +17,6 @@
   .section-container {
     display: block;
   }
-  .arrow {
-    display: none;
-  }
   .icon-arrow {
     display: none;
   }
@@ -50,7 +47,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact, 
+  #contact,
   footer {
     height: 40vh;
   }
@@ -76,7 +73,8 @@
   .contact-info-container {
     margin: 0;
   }
-  .contact-info-container p, .nav-links li a {
+  .contact-info-container p,
+  .nav-links li a {
     font-size: 1rem;
   }
   .experience-sub-title {
