@@ -9,8 +9,8 @@
   #hamburguer-nav {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
+  #tecnology,
+  .tecnology-details-container {
     margin-top: 2rem;
   }
   #profile,
@@ -77,7 +77,7 @@
   .nav-links li a {
     font-size: 1rem;
   }
-  .experience-sub-title {
+  .tecnology-sub-title {
     font-size: 1.25rem;
   }
   .logo {

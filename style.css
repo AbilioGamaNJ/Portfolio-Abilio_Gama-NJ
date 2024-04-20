@@ -358,18 +358,18 @@ svg {
 
 /* Experience Section */
 
-#experience {
+#tecnology {
   position: relative;
 }
 
-.experience-sub-title {
+.tecnology-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.tecnology-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -406,7 +406,7 @@ article {
 article .icon {
   cursor: default;
 }
-.details-container-experience {
+.details-container-tecnology {
   padding: 3rem;
   width: 60%;
   background: white;
@@ -416,7 +416,7 @@ article .icon {
   text-align: center;
 }
 
-.about-containers-experience {
+.about-containers-tecnology {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
